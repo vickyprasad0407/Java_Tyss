@@ -1,0 +1,24 @@
+package com.test;
+
+public class Demno4 {
+
+	public static void main(String[] args) {
+
+		int [][] a= {{1,2,3},{4,5,6},{7,8,9}};
+		 int d1=0,d2=0;
+		
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a[0].length;j++)
+			{
+                if(i==j)
+                	d1=d1+a[i][j];
+                if((i+j)==((a.length)-1))
+                	d2=d2+a[i][j];
+			}
+		
+		}
+		System.out.println(d1-d2);	
+	}
+
+}
